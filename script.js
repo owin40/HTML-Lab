@@ -28,10 +28,10 @@ function buyAutoClicker() {
   if (money >= autoPriceAuto) {
     money -= autoPriceAuto;
     autoValue += 1;
-    autoPriceAuto = Math.round(autoPriceAuto * 1.2);
+    autoPriceAuto = Math.round(autoPriceAuto * 2);
     updateDisplay();
   } else {
-    alert("duitnya buat nambahin auto clicker kurang cuy");
+    alert("duitnya buat nambahin AUTO CLICKER kurang cuy");
   }
 }
 
@@ -40,10 +40,10 @@ function buyIncClicker() {
   if (money >= autoPriceInc) {
     money -= autoPriceInc;
     clickValue += 1;
-    autoPriceInc = Math.round(autoPriceInc * 1.2);
+    autoPriceInc = Math.round(autoPriceInc * 2);
     updateDisplay();
   } else {
-    alert("duitnya buat nambahin increase clicker kurang cuy");
+    alert("duitnya buat nambahin INCREASE CLICKER kurang cuy");
   }
 }
 
@@ -63,5 +63,24 @@ document.getElementById("buy-button").addEventListener("click", buyAutoClicker);
 // Update the display when the page first loads
 updateDisplay();
 
-const myAudio = document.getElementById("myAudio");
-myAudio.volume = 0.2; // Set the volume to 50%
+// create an audio object
+const soundEffect = new Audio("assets/music/coin.mp3");
+
+// add a click event listener to the kodok button
+const kodokButton = document.getElementById("kodok");
+kodokButton.addEventListener("click", function () {
+  // play the sound effect
+  soundEffect.play();
+});
+
+const kodok = document.getElementById("kodok");
+
+function clickKodok() {
+  kodok.classList.add("clicked");
+  playSound();
+  setTimeout(() => {
+    kodok.classList.remove("clicked");
+  }, 200);
+}
+
+kodok.addEventListener("click", clickKodok);

@@ -1,3 +1,23 @@
+h1 {
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+p {
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+h4 {
+  font-family: Pixelbit;
+  src: url(assets/font/bit.ttf) format("truetype");
+  font-size: 15px;
+}
+
+p1 {
+  font-family: Pixelbit;
+  src: url(assets/font/bit.ttf) format("truetype");
+  font-size: 10px;
+}
+
 body {
   background-image: url(assets/bg.gif);
   background-size: cover;
@@ -77,6 +97,19 @@ main {
   display: flex;
   margin: 0 auto;
   text-align: center;
+}
+
+@keyframes enlarge {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+#kodok.clicked {
+  animation: enlarge 0.2s ease-in-out forwards;
 }
 
 .status {
