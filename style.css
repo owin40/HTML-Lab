@@ -66,14 +66,15 @@ main {
 }
 
 #kodok {
-  background-image: url("assets/kodok.png");
-  background-size: cover;
+  background-image: url("assets/kodok2.png");
+  background-size: contain;
   background-color: transparent;
-  width: 200px;
-  height: 200px;
+  background-repeat: no-repeat;
+  width: 350px;
+  height: 350px;
   border: none;
   cursor: pointer;
-  display: block;
+  display: flex;
   margin: 0 auto;
   text-align: center;
 }
