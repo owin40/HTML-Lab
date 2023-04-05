@@ -16,6 +16,7 @@
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
+    <link href="style.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -23,8 +24,13 @@
       <!-- place navbar here -->
     </header>
     <main>
-      <button onclick="add()">Add 1</button>
-      <p id="clickCount">Click count: 0</p>
+      <div class="row">
+        <div class="container">
+          <h1>IDLE CLICKER GAME</h1>
+          <button onclick="add()" id="clicker">add 1</button>
+          <p id="clickCount">Click count: 0</p>
+        </div>
+      </div>
     </main>
     <footer>
       <!-- place footer here -->
