@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Idle Clicker</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="idle.html">Game</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <center><h1>Idle Clicker Game</h1></center>
+      <div class="status">
+        <p id="money">Money: 0$</p>
+        <p id="clickValue">Increase per click: 1</p>
+        <p id="autoValue">Auto clicker: 0</p>
+        <p id="autoPriceInc">Price for increase click: 2$</p>
+        <p id="autoPriceAuto">Price for auto click: 2$</p>
+      </div>
+      <div class="container">
+        <button id="button" onclick="clickMoney()"></button>
+        <button id="autoClicker" onclick="buyAutoClicker()">
+          buy auto clicker: 4$
+        </button>
+        <button id="autoClicker" onclick="buyIncClicker()">
+          buy increase clicker: 2$
+        </button>
+      </div>
+    </main>
+
+    <footer></footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
