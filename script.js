@@ -62,3 +62,6 @@ document.getElementById("buy-button").addEventListener("click", buyAutoClicker);
 
 // Update the display when the page first loads
 updateDisplay();
+
+const myAudio = document.getElementById("myAudio");
+myAudio.volume = 0.2; // Set the volume to 50%

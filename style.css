@@ -51,7 +51,6 @@ main {
   font-family: Pixelbit;
   src: url(assets/font/bit.ttf) format("truetype");
   color: #fff;
-  font-size: 40px;
   padding-top: 20px;
 }
 
@@ -66,7 +65,7 @@ main {
   color: #fff;
 }
 
-#button {
+#kodok {
   background-image: url("assets/kodok.png");
   background-size: cover;
   background-color: transparent;
